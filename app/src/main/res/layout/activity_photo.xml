@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".PhotoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/photo_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:navigationIcon="@mipmap/fanhui"
+        app:title="福利图"
+        app:titleTextColor="#FFFF" />
+
+    <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:transitionName="@string/welfare_share_img" />
+</RelativeLayout>
