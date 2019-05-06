@@ -24,6 +24,7 @@ public class Presenter implements IPresenter {
     private IModel mModel;
     private IView mView;
 
+    //提交代码
     public Presenter(IView mView) {
         this.mView = mView;
         mModel = new Model();
